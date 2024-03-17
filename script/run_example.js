@@ -1,7 +1,6 @@
-const { program } = require('commander');
+const { program } = require("commander");
 
-program
-    .argument('<name>', 'name of the example to run')
+program.argument("<name>", "name of the example to run");
 
 program.parse(process.argv);
 

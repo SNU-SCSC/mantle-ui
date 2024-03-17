@@ -5,7 +5,13 @@ import Button from "@/comps/Button";
 
 describe("<Button /> on Click", () => {
   var clicked = false;
-  const tree = renderer.create(<Button onClick={() => {clicked = true}}/>);
+  const tree = renderer.create(
+    <Button
+      onClick={() => {
+        clicked = true;
+      }}
+    />,
+  );
   const button = tree.root.findByType("button");
 
   test("Variable clicked becomes true", () => {
