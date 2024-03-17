@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> on Click Variable clicked becomes true 1`] = `
+<button
+  className="MT-button"
+  onClick={[Function]}
+/>
+`;
+
+exports[`<Button /> on Click Variable clicked becomes true 2`] = `
+<button
+  className="MT-button"
+  onClick={[Function]}
+/>
+`;
