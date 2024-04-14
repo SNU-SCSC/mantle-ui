@@ -1,0 +1,20 @@
+.round-square-input {
+  border-radius: 1.2rem;
+  min-height: 3.7rem;
+  line-height: 3.7rem;
+  border: None;
+  display: block;
+  text-indent: 6% !important;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 3% auto;
+  text-align: left;
+  text-indent: 13%;
+  font-size: 1em;
+  font-family: "Noto Sans KR";
+  color: #626262;
+  background: transparent;
+  box-shadow:
+    inset -5px -5px 10px #fffb,
+    inset 5px 5px 10px #757f8a88;
+}

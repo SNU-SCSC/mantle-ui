@@ -1,0 +1,24 @@
+.round-textarea {
+  border-radius: 0.6rem;
+  min-height: 6.5rem;
+  line-height: 2rem;
+  /* vertical-align: middle; */
+  border: none;
+  text-align: center;
+  width: 80%;
+  margin: 2% auto 8% auto;
+  padding: 5%;
+  text-align: left;
+  /* text-indent: 5%; */
+  padding: auto;
+  font-size: 1em;
+  font-family: "Noto Sans KR";
+  color: #626262;
+  background: transparent;
+  box-shadow:
+    inset -5px -5px 10px #fffb,
+    inset 5px 5px 10px #757f8a88;
+  resize: none;
+  display: block;
+  box-sizing: border-box; /* Ensure padding is included in the width/height calculation */
+}

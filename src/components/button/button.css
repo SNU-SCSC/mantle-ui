@@ -1,0 +1,58 @@
+.button-wrapper {
+  text-align: center;
+  font-family: Noto Sans KR;
+  font-style: normal;
+
+  vertical-align: middle;
+  border: none;
+  text-align: center;
+  /* margin: 2rem 0; */
+  /* Re-Add in community-webfront */
+  /* padding: 0.3rem 0; */
+  box-shadow: #757f8a80 5px 5px 10px;
+
+  font-weight: 700;
+  /* Re-Add in community-webfront */
+  /* transform: translate(540%, -50%); */
+}
+
+.primary-blue {
+  background-color: #fff;
+  color: #8aaae5;
+}
+
+.secondary-blue {
+  background-color: #8aaae5;
+  color: #fff;
+}
+
+.primary-black {
+  background-color: #fff;
+  color: var(--Blue-Theme-Text-Sub, #828282);
+}
+
+.secondary-black {
+  background-color: var(--Blue-Theme-Text-Sub, #828282);
+  color: #fff;
+}
+
+.large {
+  width: 6rem;
+  border-radius: 1.5rem;
+  min-height: 2rem;
+  font-size: 1.2em;
+}
+
+.medium {
+  width: 5rem;
+  border-radius: 1.2rem;
+  min-height: 1.5rem;
+  font-size: 1em;
+}
+
+.small {
+  width: 4rem;
+  border-radius: 1rem;
+  min-height: 1rem;
+  font-size: 0.8em;
+}
