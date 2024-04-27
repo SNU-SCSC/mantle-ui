@@ -1,15 +1,19 @@
 import renderer from "react-test-renderer";
-import React from "react";
+import React from 'react';
 
-import Button from "@/comps/Button";
+import RoundSquareButton from "@/components/button/RoundSquareButton";
 
-describe("<Button /> on Click", () => {
+describe("<RoundSquareButton /> on Click", () => {
   var clicked = false;
   const tree = renderer.create(
-    <Button
+    <RoundSquareButton
       onClick={() => {
         clicked = true;
       }}
+      buttonSize="large"
+      isPrimary={true}
+      color="blue"
+      innerText="Click me"
     />,
   );
   const button = tree.root.findByType("button");
