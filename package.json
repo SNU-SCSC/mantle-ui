@@ -24,12 +24,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.2",
     "vite": "^5.1.6",
     "vite-tsconfig-paths": "^4.3.2"
   },
   "scripts": {
     "test": "jest ./test",
-    "example": "node ./script/run_example.js"
+    "example": "node ./script/run_example.js",
+    "build": "tsup src/index.ts"
   }
 }

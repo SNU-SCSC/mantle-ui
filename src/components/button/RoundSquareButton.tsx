@@ -8,6 +8,8 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
+// disabled 기능 넣기
+
 export default function RoundSquareButton({
   innerText,
   buttonSize,
