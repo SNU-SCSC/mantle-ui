@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import "./pagination.css";
+import "./Pagination.css";
 
 interface PaginationProps {
   totalPages: number;
   onPageChange: (page: number) => void;
 }
 
-export default function BoardPagination({ totalPages, onPageChange }: PaginationProps) {
+export default function BoardPagination({
+  totalPages,
+  onPageChange,
+}: PaginationProps) {
   const pagesPerGroup = 10;
 
   const [currPage, setCurrPage] = useState(0);

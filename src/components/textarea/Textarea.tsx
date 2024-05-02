@@ -1,4 +1,4 @@
-import "./textarea.css";
+import "./Textarea.css";
 
 interface ButtonProps {
   placeholder: string;

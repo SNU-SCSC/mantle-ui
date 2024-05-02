@@ -1,4 +1,4 @@
-import "./input.css";
+import "./Input.css";
 
 interface ButtonProps {
   placeholder: string;
