@@ -1,0 +1,33 @@
+.MT-textinput-root {
+  --MT-textinput-fg: var(--MT-fg0);
+  --MT-textinput-focus-fg: var(--MT-blue0);
+  --MT-textinput-shd: var(--MT-shd);
+
+  height: max-content;
+}
+
+.MT-textinput-label {
+  display: block;
+  margin-left: 0.25rem;
+
+  color: rgb(var(--MT-textinput-fg));
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.MT-textinput {
+  all: unset;
+
+  font-size: 12px;
+
+  padding: 0.5rem 0.75rem;
+
+  border-radius: 0.625rem;
+  border: 2px solid rgb(var(--MT-textinput-fg));
+
+  box-shadow: 0 0.3125rem 0 0 rgba(var(--MT-textinput-shd), 0.2);
+
+  &:focus {
+    border-color: rgb(var(--MT-textinput-focus-fg));
+  }
+}
