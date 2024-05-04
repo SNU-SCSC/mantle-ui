@@ -1,8 +1,0 @@
-{
-    "name": "mantle-ui-src",
-    "version": "0.0.0",
-    "main": "index.ts",
-    "peerDependencies": {
-      "react": "^18.2.0"
-    }
-}

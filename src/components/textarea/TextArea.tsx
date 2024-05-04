@@ -14,9 +14,11 @@ export default function TextArea({
   ...props
 }: TextAreaProps & React.TextareaHTMLAttributes<HTMLTextAreaElement>) {
   let handleRef = useRef<HTMLDivElement>(null);
+  let textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
     if (!handleRef.current) return;
+    if (!textareaRef.current) return;
 
     let handle = handleRef.current;
     let isDragging = false;
@@ -32,22 +34,22 @@ export default function TextArea({
     document.addEventListener("mousemove", (e) => {
       if (!isDragging) return;
 
-      let textarea =
-        handle.parentElement?.parentElement?.querySelector("textarea");
+      let textarea = textareaRef.current;
       if (!textarea) return;
 
-      let { top, height } = textarea.getBoundingClientRect();
+      let { top } = textarea.getBoundingClientRect();
       let { clientY } = e;
       let newHeight = clientY - top;
       textarea.style.height = `${newHeight}px`;
     });
-  }, [handleRef.current]);
+  }, [handleRef.current, textareaRef.current]);
 
   return (
     <div className={`MT-textarea-root ${className || ""}`}>
       {label && <label className="MT-textarea-label"> {label} </label>}
       <textarea
         className={`MT-textarea ${resizable ? "MT-resizable" : ""}`}
+        ref={textareaRef}
         {...props}
       />
       {resizable && (

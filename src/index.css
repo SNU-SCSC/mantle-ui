@@ -26,6 +26,11 @@
   --MT-shd: 102, 102, 102;
 }
 
+body {
+  color: rgb(var(--MT-txt));
+  background-color: rgb(var(--MT-bg0));
+}
+
 * {
   font-size: 16px;
 }

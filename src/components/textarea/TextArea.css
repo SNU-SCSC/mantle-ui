@@ -31,6 +31,8 @@
   resize: none;
   white-space: pre;
 
+  box-shadow: 0 0.3125rem 0 0 rgba(var(--MT-textarea-shd), 0.2);
+
   &:focus {
     border-color: rgb(var(--MT-textarea-focus-fg));
   }
@@ -48,7 +50,6 @@
 
   &.MT-resizable {
     border-bottom: 0.75rem solid rgb(var(--MT-textarea-fg));
-    box-shadow: 0 0.3125rem 0 0 rgba(var(--MT-textarea-shd), 0.2);
 
     &:focus {
       border-color: rgb(var(--MT-textarea-focus-fg));

@@ -32,6 +32,7 @@
   "scripts": {
     "test": "jest ./test",
     "example": "node ./script/run_example.js",
-    "build": "tsup src/index.ts"
+    "build": "tsup src/* --dts",
+    "prettier": "prettier --write \"{src,example,script,test}/**/*.{ts,tsx}\""
   }
 }

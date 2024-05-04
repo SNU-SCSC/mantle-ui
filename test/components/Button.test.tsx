@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import React from 'react';
+import React from "react";
 
 import RoundSquareButton from "@/components/button/RoundSquareButton";
 
