@@ -1,145 +1,36 @@
-/* src/components/button/button.css */
-.button-wrapper {
-  text-align: center;
-  font-family: Noto Sans KR;
-  font-style: normal;
-  vertical-align: middle;
-  border: none;
-  text-align: center;
-  box-shadow: #757f8a80 5px 5px 10px;
-  font-weight: 700;
-}
-.primary-blue {
-  background-color: #fff;
-  color: #8aaae5;
-}
-.secondary-blue {
-  background-color: #8aaae5;
-  color: #fff;
-}
-.primary-black {
-  background-color: #fff;
-  color: var(--Blue-Theme-Text-Sub, #828282);
-}
-.secondary-black {
-  background-color: var(--Blue-Theme-Text-Sub, #828282);
-  color: #fff;
-}
-.large {
-  width: 6rem;
-  border-radius: 1.5rem;
-  min-height: 2rem;
-  font-size: 1.2em;
-}
-.medium {
-  width: 5rem;
-  border-radius: 1.2rem;
-  min-height: 1.5rem;
-  font-size: 1em;
-}
-.small {
-  width: 4rem;
-  border-radius: 1rem;
-  min-height: 1rem;
-  font-size: 0.8em;
+:root {
+  /* Background colors */
+  --MT-bg0: 250, 250, 250;
+  --MT-bg1: 230, 230, 230;
+
+  /* Foreground colors */
+  --MT-fg0: 84, 84, 84;
+  --MT-fg1: 147, 147, 147;
+  --MT-fg2: 217, 217, 217;
+
+  /* Text colors */
+  --MT-txt: 22, 22, 22;
+  --MT-txt-inv: 250, 250, 250;
+
+  /* Highlight colors */
+  --MT-blue0: 76, 127, 225;
+  --MT-blue1: 119, 158, 233;
+  --MT-red0: 209, 83, 98;
+  --MT-red1: 232, 129, 137;
+  --MT-green0: 48, 154, 82;
+  --MT-green1: 75, 206, 117;
+  --MT-yellow0: 217, 182, 7;
+  --MT-yellow1: 249, 214, 39;
+
+  /* Shadows */
+  --MT-shd: 102, 102, 102;
 }
 
-/* src/components/input/input.css */
-.round-square-input {
-  border-radius: 1.2rem;
-  min-height: 3.7rem;
-  line-height: 3.7rem;
-  border: None;
-  display: block;
-  text-indent: 6% !important;
-  text-align: center;
-  width: 100%;
-  text-align: left;
-  text-indent: 13%;
-  font-size: 1em;
-  font-family: "Noto Sans KR";
-  color: #626262;
-  background: transparent;
-  box-shadow: inset -5px -5px 10px #fffb, inset 5px 5px 10px #757f8a88;
+body {
+  color: rgb(var(--MT-txt));
+  background-color: rgb(var(--MT-bg0));
 }
 
-/* src/components/pagination/pagination.css */
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.pagination-item {
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 0 5px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-.pagination-item.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-/* src/components/textarea/textarea.css */
-.round-textarea {
-  border-radius: 0.6rem;
-  min-height: 6.5rem;
-  line-height: 2rem;
-  border: none;
-  text-align: center;
-  width: 100%;
-  padding: 5%;
-  text-align: left;
-  padding: auto;
-  font-size: 1em;
-  font-family: "Noto Sans KR";
-  color: #626262;
-  background: transparent;
-  box-shadow: inset -5px -5px 10px #fffb, inset 5px 5px 10px #757f8a88;
-  resize: none;
-  display: block;
-  box-sizing: border-box;
-}
-
-/* src/components/dropdown/dropdown.css */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px;
+* {
   font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.dropdown-list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  z-index: 1;
-}
-.dropdown-item {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  border: none;
-}
-.dropdown-item:hover {
-  background-color: #f1f1f1;
-}
-.dropdown-item.active {
-  background-color: #4caf50;
-  color: white;
 }

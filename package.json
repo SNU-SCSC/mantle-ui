@@ -10,7 +10,8 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@swc/core": "^1.4.8",
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.4.17",
     "@swc/jest": "^0.2.36",
     "@types/jest": "^29.5.12",
     "@types/react": "^18.2.65",
@@ -24,7 +25,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0",
-    "tsup": "^8.0.2",
     "typescript": "^5.4.2",
     "vite": "^5.1.6",
     "vite-tsconfig-paths": "^4.3.2"
@@ -32,7 +32,7 @@
   "scripts": {
     "test": "jest ./test",
     "example": "node ./script/run_example.js",
-    "build": "tsup src/* --dts",
+    "build": "swc ./src/**/*.{ts,tsx,css} -d dist --copy-files --strip-leading-paths",
     "prettier": "prettier --write \"{src,example,script,test}/**/*.{ts,tsx}\""
   }
 }
