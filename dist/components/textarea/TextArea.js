@@ -1,3 +1,4 @@
+"use client";
 function _define_property(obj, key, value) {
     if (key in obj) {
         Object.defineProperty(obj, key, {
