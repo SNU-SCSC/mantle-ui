@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useEffect, useState } from "react";
 import "./Pagination.css";
 
@@ -32,7 +33,7 @@ export default function BoardPagination({
       const start = Math.floor(currGroup) * pagesPerGroup + 1;
       const end = Math.min(start + pagesPerGroup, totalPages + 1);
       return page >= start && page < end;
-    },
+    }
   );
 
   return (

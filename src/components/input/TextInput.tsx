@@ -1,5 +1,7 @@
 import "./TextInput.css";
 
+import React from "react";
+
 interface TextInputProps {
   label?: string;
 }
