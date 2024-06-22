@@ -45,6 +45,7 @@ function _unsupported_iterable_to_array(o, minLen) {
     if (n === "Map" || n === "Set") return Array.from(n);
     if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _array_like_to_array(o, minLen);
 }
+import React from "react";
 import { useState } from "react";
 import "./Dropdown.css";
 export default function BoardDropdown(param) {

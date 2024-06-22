@@ -54,6 +54,7 @@ function _object_without_properties_loose(source, excluded) {
     }
     return target;
 }
+import React from "react";
 import { useEffect, useRef } from "react";
 import "./TextArea.css";
 export default function TextArea(_param) {

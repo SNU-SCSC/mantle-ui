@@ -54,6 +54,7 @@ function _object_without_properties_loose(source, excluded) {
     return target;
 }
 import "./TextInput.css";
+import React from "react";
 export default function TextInput(_param) {
     var label = _param.label, //
     className = _param.className, props = _object_without_properties(_param, [
